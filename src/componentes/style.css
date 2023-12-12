@@ -1,0 +1,49 @@
+/* Citas.css */
+
+.custom-modal {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  color: #000; /* Color del texto dentro del modal */
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); /* Sombra del modal */
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Estilos adicionales para mejorar la legibilidad dentro del modal */
+.custom-modal h2 {
+  margin-bottom: 20px;
+}
+
+.custom-modal label {
+  margin-top: 10px;
+}
+
+.custom-modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.custom-modal button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.custom-modal button:last-child {
+  margin-right: 0;
+}
