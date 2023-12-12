@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Modal from 'react-modal'; // Asegúrate de tener instalada la librería react-modal
+import Modal from 'react-modal';
 import { Navbar } from "./navbar";
 import '../componentes/style.css';
 
@@ -119,10 +119,9 @@ export function Citas() {
         isOpen={modalOpen}
         onRequestClose={handleCloseModal}
         contentLabel="Detalles de la Cita"
-        className="custom-modal" // Aplica estilos personalizados al modal
-        overlayClassName="custom-overlay" // Aplica estilos personalizados al fondo del modal
+        className="custom-modal" 
+        overlayClassName="custom-overlay"
       >
-          {/* Contenido de la ventana emergente */}
           <h2>Detalles de la Cita</h2>
           <table>
             <tbody>
@@ -144,14 +143,11 @@ export function Citas() {
               </tr>
             </tbody>
           </table>
-
           <h2>Observaciones y Receta</h2>
           <label>Observaciones:</label>
           <textarea value={observaciones} onChange={(e) => setObservaciones(e.target.value)} />
-
           <label>Receta:</label>
           <textarea value={receta} onChange={(e) => setReceta(e.target.value)} />
-
           <button onClick={handleGuardar}>Guardar</button>
           <button onClick={handleCloseModal}>Cerrar</button>
         </Modal>
